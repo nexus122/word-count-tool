@@ -1,33 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body{
     background-color:#FA8072;
     text-align: center;
+    font-family:'Roboto', sans-serif;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #72ecfa;
+    width: 50%;
+    padding: 2em;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{
-    margin: 100px auto 100px;
-    /* margin-left: 220px; */
-    width: 350px;
-    height: 40px;
     display: block;
     text-align: center;
+    width: 50%;
+    height: 40px;
+    font-size: 2em;
 }
 
-#output{
-    margin-top: 45px;
-    width: 100px;
-    background: lightgreen;
-    margin: 100px auto 100px;
-
+.buttons{
+    display: block;
+    width: 100%;
+    gap: 2em;    
 }
 
 #btn{
-    width: 350px;
-    height: 80px;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+    max-width: 350px;
+    max-height: 80px;
+    min-width: 200px;
     color: #fff;
     background-color:blue;
     border-style: none;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 2em;  
+    margin-left: 1em;
+    margin-right: 1em;
+    cursor: pointer;
     /* margin-left: 385px; */
 }
 

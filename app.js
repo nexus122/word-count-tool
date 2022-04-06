@@ -1,3 +1,23 @@
+Vue.createApp({
+    data(){
+        return{
+            text: '',
+            length: 0,
+
+        }
+    },
+    methods:{
+        onChange(){
+            this.length = this.text.length;        
+        },
+        reset(){
+            this.text = '';
+            this.length = 0;
+        }
+    }
+}).mount('#app');
+/*
+
 let button = document.getElementById('btn');
 
 button.addEventListener('click', function(){
@@ -7,3 +27,5 @@ button.addEventListener('click', function(){
 
     outputDiv.innerHTML = `<h1>${count}</h1>`
 });
+
+*/
